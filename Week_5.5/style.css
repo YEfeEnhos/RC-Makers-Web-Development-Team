@@ -1,0 +1,40 @@
+
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(175, 56, 56);
+    /*animation = animation-name, animation-duration, animation-timing-function, 
+    animation-delay, animation-iteration-count, animation-direction, 
+    animation-fill-mode,animation-play-state,*/
+
+  
+    animation: multi_change;
+    pointer-events: none;
+
+    
+    
+
+   
+}
+
+@keyframes change {
+    from {background-color: rgb(175, 56, 56);}
+    to {background-color: rgb(18, 85, 85);}
+    
+}
+
+
+@keyframes multi_change {
+    0%   {background-color: rgb(175, 56, 56);}
+    25%  {background-color: rgb(154, 154, 14);}
+    50%  {background-color:  rgb(18, 85, 85);}
+    100% {background-color: rgb(13, 77, 13);}
+}
+
+/*not an animation but a transition */
+div:hover{
+    background-color: rgb(18, 85, 85);
+    
+}
